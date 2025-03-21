@@ -63,7 +63,6 @@ function App() {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         setMobileView(window.innerWidth < 1000);
-        console.log("resizing ...");
       }, 500);
       return () => {
         clearTimeout(resizeTimer);
